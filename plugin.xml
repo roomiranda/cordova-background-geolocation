@@ -21,7 +21,7 @@
     <!-- Cordova 5 npm-style plugin referernce.  Comment this out if you're not using Cordova 5 -->
     <dependency id="cordova-plugin-dialogs" />
 
-    <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services.git" />
+    <!-- <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services.git" /> -->
     
     <!-- <dependency id="com.google.playservices" url="https://github.com/LogicsSoftware/google-play-services.git" /> -->
 
@@ -31,7 +31,7 @@
 
     <!-- android -->
     <platform name="android">
-        <!--<framework src="src/android/build.gradle" custom="true" type="gradleReference" />-->
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
         <resource-file src="src/android/libs/tslocationmanager.aar" target="src/android/libs/tslocationmanager.aar" />
 
         <source-file src="src/android/CDVBackgroundGeolocation.java" target-dir="src/com/transistorsoft/cordova/bggeo" />
