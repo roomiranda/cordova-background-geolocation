@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.transistorsoft.cordova.background-geolocation"
+    id="com.giganti.cordova.background-geolocation"
     version="0.5.4">
     <name>BackgroundGeolocation</name>
     <description>Sophisticated, battery-efficient background-geolocation plugin for Cordova</description>
@@ -21,13 +21,15 @@
     <!-- Cordova 5 npm-style plugin referernce.  Comment this out if you're not using Cordova 5 -->
     <dependency id="cordova-plugin-dialogs" />
 
+    <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services.git" />
+
     <js-module src="www/BackgroundGeolocation.js" name="BackgroundGeolocation">
         <clobbers target="window.BackgroundGeolocation" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
-        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <!--<framework src="src/android/build.gradle" custom="true" type="gradleReference" />-->
         <resource-file src="src/android/libs/tslocationmanager.aar" target="src/android/libs/tslocationmanager.aar" />
 
         <source-file src="src/android/CDVBackgroundGeolocation.java" target-dir="src/com/transistorsoft/cordova/bggeo" />
