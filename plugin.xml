@@ -14,15 +14,13 @@
     </engines>
 
     <!-- 
-        Pre-Cordova 5, non-npm plugin reference.  Uncomment this if you're not using Cordova 5. -->
-    <dependency id="org.apache.cordova.dialogs" /> 
+        Pre-Cordova 5, non-npm plugin reference.  Uncomment this if you're not using Cordova 5. 
+    <dependency id="org.apache.cordova.dialogs" /> -->
     
 
-    <!-- Cordova 5 npm-style plugin referernce.  Comment this out if you're not using Cordova 5  
-    <dependency id="cordova-plugin-dialogs" /> -->
+    <!-- Cordova 5 npm-style plugin referernce.  Comment this out if you're not using Cordova 5  -->
+    <dependency id="cordova-plugin-dialogs" /> 
 
-    <!-- <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services.git" /> -->
-    
     <js-module src="www/BackgroundGeolocation.js" name="BackgroundGeolocation">
         <clobbers target="window.BackgroundGeolocation" />
     </js-module>
@@ -30,9 +28,9 @@
     <!-- android -->
     <platform name="android">
     	
-    	<!-- <dependency id="com.google.playservices" url="https://github.com/LogicsSoftware/google-play-services.git" /> -->
+    	<dependency id="com.google.playservices" url="https://github.com/LogicsSoftware/google-play-services.git" />
         
-        <framework src="src/android/build.gradle" custom="true" type="gradleReference" /> 
+        <!-- <framework src="src/android/build.gradle" custom="true" type="gradleReference" /> -->
         
         <resource-file src="src/android/libs/tslocationmanager.aar" target="src/android/libs/tslocationmanager.aar" />
 
