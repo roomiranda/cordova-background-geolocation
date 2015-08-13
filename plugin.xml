@@ -17,7 +17,6 @@
         Pre-Cordova 5, non-npm plugin reference.  Uncomment this if you're not using Cordova 5. 
     <dependency id="org.apache.cordova.dialogs" /> -->
     
-
     <!-- Cordova 5 npm-style plugin referernce.  Comment this out if you're not using Cordova 5  -->
     <dependency id="cordova-plugin-dialogs" /> 
 
@@ -28,16 +27,16 @@
     <!-- android -->
     <platform name="android">
     	
-        <!-- <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
         <resource-file src="src/android/libs/tslocationmanager.aar" target="src/android/libs/tslocationmanager.aar" />
         <source-file src="src/android/CDVBackgroundGeolocation.java" target-dir="src/com/transistorsoft/cordova/bggeo" />
-        <source-file src="src/android/BootReceiver.java" target-dir="src/com/transistorsoft/cordova/bggeo" /> -->
+        <source-file src="src/android/BootReceiver.java" target-dir="src/com/transistorsoft/cordova/bggeo" /> 
         
-        <dependency id="com.google.playservices" url="https://github.com/LogicsSoftware/google-play-services.git" /><!-- V24 instead of framework -->
+        <!-- <dependency id="com.google.playservices" url="https://github.com/LogicsSoftware/google-play-services.git" />
       	<source-file src="src/android/aar/eventbus-3.0.0-beta1.jar" target-dir="libs" />
-      	<source-file src="src/android/aar/classes.jar" target-dir="libs" /> <!-- transistor-locationmanager.jar -->
+      	<source-file src="src/android/aar/classes.jar" target-dir="libs" /> 
       	<source-file src="src/android/aar/CDVBackgroundGeolocation.java" target-dir="src/com/transistorsoft/cordova/bggeo" />
-      	<source-file src="src/android/aar/BootReceiver.java" target-dir="src/com/transistorsoft/cordova/bggeo" />
+      	<source-file src="src/android/aar/BootReceiver.java" target-dir="src/com/transistorsoft/cordova/bggeo" /> -->
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <service android:name="com.transistorsoft.locationmanager.BackgroundGeolocationService" />
