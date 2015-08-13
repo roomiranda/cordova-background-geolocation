@@ -14,12 +14,12 @@
     </engines>
 
     <!-- 
-        Pre-Cordova 5, non-npm plugin reference.  Uncomment this if you're not using Cordova 5. 
-    <dependency id="org.apache.cordova.dialogs" /> -->
+        Pre-Cordova 5, non-npm plugin reference.  Uncomment this if you're not using Cordova 5. -->
+    <dependency id="org.apache.cordova.dialogs" /> 
     
 
-    <!-- Cordova 5 npm-style plugin referernce.  Comment this out if you're not using Cordova 5  -->
-    <dependency id="cordova-plugin-dialogs" /> 
+    <!-- Cordova 5 npm-style plugin referernce.  Comment this out if you're not using Cordova 5  
+    <dependency id="cordova-plugin-dialogs" /> -->
 
     <!-- <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services.git" /> -->
     
