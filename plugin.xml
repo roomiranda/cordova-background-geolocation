@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.giganti.m1.background-geolocation"
     version="0.0.1">
-    <name>BackgroundGeolocation</name>
+    <name>M1 Gps Background</name>
     <description>Plugin para monitorar geolocalização em background.</description>
     <license>MIT</license>
     <keywords>cordova, phonegap, background geolocation</keywords>
